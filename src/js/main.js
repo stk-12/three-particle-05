@@ -195,7 +195,8 @@ class Main {
       };
 
       gsap.to(intermediateObject, {
-        duration: 1.2,
+        // duration: 1.2,
+        duration: 1.2 + Math.random() * 0.3, // 0.3秒のランダムな遅延
         // ease: "power4.inOut",
         ease: "expo.inOut",
         x: targetPositions[i],
